@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calulator</title>
+</head>
+<body>
+    <div class="maindiv">
+ 
+    <div >
+          <input type="text" id="expression" autocomplete="off" placeholder="0">
+    </div>
+    <div id="output">
+        output
+    </div>
+    <div class="buttons">
+        <div class="rows">
+<button onclick="clearExpression()" class="special">Ac</button>
+<button onclick="enter('^')">^</button>
+<button onclick="enter('(')">(</button>
+<button onclick="enter(')')">)</button>
+ <button onclick="backspace()">DE</button>
+</div>
+
+   
+
+        <div class="rows">
+<button onclick="enter('Sin')">Sin</button>
+<button onclick="enter('Cos')">Cos</button>
+<button onclick="enter('Tan')">Tan</button>
+<button onclick="enter('sqrt')">sqrt</button>
+
+</div>
+<div class="rows">
+<button onclick="enter('1')">1</button>
+<button onclick="enter('2')">2</button>
+<button onclick="enter('3')">3</button>
+<button onclick="enter('+')">+</button>
+</div>
+<div class="rows">
+<button onclick="enter('4')">4</button>
+<button onclick="enter('5')">5</button>
+<button onclick="enter('6')">6</button>
+<button onclick="enter('-')">-</button>
+</div>
+<div class="rows">
+<button onclick="enter('7')">7</button>
+<button onclick="enter('8')">8</button>
+<button onclick="enter('9')">9</button>
+<button onclick="enter('*')">*</button>
+
+</div>
+
+
+<div class="rows">
+    <button onclick="enter('0')">0</button>
+        <button onclick="enter('.')">.</button>
+            <button onclick="enter('/')">/</button>
+                <button onclick="calculate()" class="special">=</button>
+</div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
